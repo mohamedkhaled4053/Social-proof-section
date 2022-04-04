@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:hsl(300, 43%, 22%)
+}
+
+body{
+    font-family: 'spartan';
+    font-size: 15px;
+}
+
+main{
+    margin: 80px 25px;
+}
+
+.top{
+    text-align: center;
+}
+
+h1{
+    color: var(--main-color);
+    margin-bottom: 35px;
+}
+
+.text p{
+    color: hsl(303, 10%, 53%);
+    margin-bottom: 40px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.rate{
+    margin: 15px;
+    padding: 15px;
+    background-color: hsl(300, 24%, 96%);
+    color: var(--main-color);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.stars{
+    margin-bottom: 15px;
+}
+
+.bottom{
+    margin-top: 50px;
+}
+
+.review{
+    margin-top: 15px;
+    background: var(--main-color);
+    border-radius: 10px;
+    color: white;
+    padding: 40px 30px;
+    align-items: center;
+}
+
+.review .person{
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.review .person img{
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 20px;
+}
+
+.review .person p:last-child{
+    color: hsl(333, 80%, 67%) ;
+    margin-top:5px ;
+}
+
+@media (min-width:1000px){
+
+    body{
+        display: flex;
+    }
+     
+    main{
+        margin: 130px auto;
+        width: 1110px;
+        max-width: 90%;
+    }
+    
+    .top{
+        text-align: start;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .text{
+        width: 430px;
+    }
+
+    h1{
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+    
+    .rate{
+        display: flex;
+        width: 445px;
+        padding: 20px 30px;
+        align-items: center;
+    }
+
+    .rate.one{
+        transform: translateX(-100px);
+    }
+
+    .rate.two{
+        transform: translateX(-50px);
+    }
+    
+    .stars{
+        margin: 0 35px 0 0;
+    }
+    
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .review{
+        margin: 0;
+        width: 350px;
+    }
+    
+    .review.two{
+        transform: translateY(15px);
+    }
+    
+    .review.three{
+        transform: translateY(30px);
+    }
+}
